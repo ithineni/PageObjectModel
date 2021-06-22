@@ -95,13 +95,5 @@ public void testCase3_smartTest() {
 		e.printStackTrace();
 	}
 }
-//@AfterClass
-public static void dashBoardClose() {
-	try {
-		driver.close();
-	}
-	catch(Exception e) {
-		e.printStackTrace();
-	}
-}
+
 }
