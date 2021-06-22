@@ -17,7 +17,7 @@ public class LoginTestCase extends WebDriverHandling {
 	static WebDriver driver=null;
 	//static Actions act=null;
 	static LoginPage loginPage=null;
-	//Beforeclass
+	
 @BeforeClass
 		public static void setUp() {
 		try {

@@ -37,7 +37,7 @@ public void testCase1_DashBoard() {
 	String expectedValue= ReadPropertiesFile.readPropertiesFile(System.getProperty("user.dir")+"\\src\\test\\resources\\config\\Test.properties", "EXPECTED_REALTIME");
 	dashboardPage.clickDashBoard();
 	dashboardPage.clickRealTime();
-	Thread.sleep(1000);
+	Thread.sleep(1500);
 	String actualValue= driver.findElement(By.xpath("//h4[text()='Select your configuration to start Real time testing!']")).getText().trim();
 	if(expectedValue.equals(actualValue)) {
 		test.log(Status.PASS, MarkupHelper.createLabel("Expected:"+" &nbsp; "+expectedValue+","+" &nbsp; "+"Actual:"+" &nbsp; "+actualValue, ExtentColor.GREEN));
